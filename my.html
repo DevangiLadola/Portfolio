@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+         <div id="header">
+         <div class="container">
+            <nav>
+                <img src="images/portfolio.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+
+                </ul>
+            </nav>
+           <div class="header-text">
+            <h1>Hi, I'm <span>Devangi</span> Ladola<br></h1>
+            <p>A <span class="auto-type"></span></p>
+           </div>
+           <script src="<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+           <script>
+           var typed = new Typed(".auto-type",{
+            stings : ["programmer", "Designer"],
+            typeSpeed : 150,
+            loop : true
+        });
+        </script>
+
+         </div>
+         </div>
+         <!---------about----------->
+         <div id="about">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Throughout my academics, I went explore the software world and
+                       there technologies to upgrade myself with the leading software
+                       and tools. To become a asset,  I will explore myself fully and
+                       realize  my  potential to lead  the  organization  with all my
+                       responsibility.
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>No Experience A Fresher</li> 
+                            </ul>
+                        </div>   
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-2024</span><br>Bachelor of Computer Application at GLS University, Ahmedabad</li>
+                            </ul>
+                        </div>
+                    </p>
+                </div>
+
+            </div>
+         </div>
+         <!-------contact----------->
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link"); 
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+         </script>
+    </body>
+</html>

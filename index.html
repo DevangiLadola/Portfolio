@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+         <div id="header">
+         <div class="container">
+            <nav>
+                <img src="images/portfolio.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+
+                </ul>
+            </nav>
+           <div class="header-text">
+            <h1>Hi, I'm <span>Devangi</span> Ladola<br></h1>
+            <p>A <span> React.js Developer</span></p>
+           </div>
+
+         </div>
+         </div>
+         <!---------about----------->
+         <div id="about">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                        </div>
+            <div class="tab-contents" id="skills">
+                <div class="skills-container">
+        
+                <div class="skill-box">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage html"></div>
+                      </div>
+                      <span>90%</span>
+                </div>
+        
+                <div class="skill-box">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage css"></div>
+                      </div>
+                      <span>90%</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage javascript"></div>
+                      </div>
+                      <span>90%</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage bootstrap"></div>
+                      </div>
+                      <span>75%</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-react"></i>
+                    <h3>React.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage react"></div>
+                      </div>
+                      <span>75%</span>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage python"></div>
+                      </div>
+                      <span>80%</span>
+                </div>
+                </div>
+            </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>No Experience A Fresher</li> 
+                            </ul>
+                        </div>   
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-2024</span><br>Bachelor of Computer Application at GLS University, Ahmedabad</li>
+                            </ul>
+                        </div>
+                    </p>
+                </div>
+
+            </div>
+         </div>
+         <!-------contact----------->
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link"); 
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+         </script>
+    </body>
+</html>
