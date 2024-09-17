@@ -3,135 +3,142 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Portfolio Website - Easy Tutorials</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     </head>
-    <body>
-         <div id="header">
-         <div class="container">
-            <nav>
-                <img src="images/portfolio.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
+    <body class="bg-black text-white">
+        <!-- Navbar -->
+        <header class="bg-black text-white">
+            <div class="container mx-auto flex items-center justify-between py-4 px-1">
+                <!-- Logo -->
+                <img src="images/portfolio.png" alt="Portfolio Logo" class="w-32 h-auto">
+                <!-- Navigation -->
+                <nav class="flex space-x-6">
+                    <ul class="flex space-x-6">
+                        <li><a href="#" class="text-white hover:text-blue-500">Home</a></li>
+                        <li><a href="#about" class="text-white hover:text-blue-500">About Me</a></li>
+                        <li><a href="#project" class="text-white hover:text-blue-500">Projects</a></li>
+                        <li><a href="#contact" class="text-white hover:text-blue-500">Contact Me</a></li>
+                      </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <!-- Hero Section -->
+        <div id="header" class="h-screen bg-cover bg-right" style="background-image: url('images/devangi.png');">
+            <div class="container mx-auto h-full flex flex-col justify-center items-left">
+                <div class="text-left">
+                    <h1 class="text-2xl font-bold mb-2">Hi, I'm <span class="text-red-500">Devangi</span> Ladola</h1>
+                    <p class="text-xl">A <span>Web Developer</span></p>
+                </div>
+            </div>
+        </div>
 
-                </ul>
-            </nav>
-           <div class="header-text">
-            <h1>Hi, I'm <span>Devangi</span> Ladola<br></h1>
-            <p>A <span> React.js Developer</span></p>
-           </div>
-
-         </div>
-         </div>
-         <!---------about----------->
-         <div id="about">
-            <div class="row">
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-
-                        </div>
-            <div class="tab-contents" id="skills">
-                <div class="skills-container">
+        <!-- About Section -->
+        <div id="about" class="container mx-auto text-center py-12">
+                <h1 class="sub-title text-white text-2xl mb-8">About Me</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <!-- Skills -->
+                <div class="tab-contents active-tab" id="skills">
+                    
+                        <div class="skills-container">
+                            <div class="skill-box ">
+                                <i class="fab fa-html5"></i>
+                                <h3>HTML</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-percentage html"></div>
+                                  </div>
+                                  <span>90%</span>
+                            </div>
+                            <div class="skill-box">
+                                <i class="fab fa-css3-alt"></i>                               
+                                <h3>CSS</h3>
+                                <div class="skill-bar">
+                                <div class="skill-percentage css"></div>
+                                 </div>
+                                 <span>90%</span>
+                            </div>
+                            <div class="skill-box">
+                                <i class="fab fa-js"></i>
+                                <h3>Javascript</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-percentage javascript"></div>
+                                  </div>
+                                  <span>90%</span>
+                            </div>
+                            
+                            <div class="skill-box">
+                                <i class="fab fa-bootstrap"></i>
+                                <h3>Bootstrap</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-percentage bootstrap"></div>
+                                  </div>
+                                  <span>75%</span>
+                            </div>
+                        
+                            <div class="skill-box">
+                                <i class="fab fa-react"></i>
+                                <h3>React.js</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-percentage react"></div>
+                                  </div>
+                                  <span>75%</span>
+                            </div>
+                        
+                            <div class="skill-box">
+                                <i class="fab fa-python"></i>
+                                <h3>Python</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-percentage python"></div>
+                                  </div>
+                                  <span>80%</span>
+                            </div>
+                    
+                            <!-- Repeat for other skills -->
+                         </div>
+                        
+                </div>
+                <!-- Experience -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>No Experience - A Fresher</li>
+                    </ul>
+                </div>
+                <!-- Education -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span class="text-pink-500">2021-2024</span><br>Bachelor of Computer Application at GLS University, Ahmedabad</li>
+                    </ul>
+                </div>
         
-                <div class="skill-box">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage html"></div>
-                      </div>
-                      <span>90%</span>
-                </div>
-        
-                <div class="skill-box">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage css"></div>
-                      </div>
-                      <span>90%</span>
-                </div>
-                <div class="skill-box">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage javascript"></div>
-                      </div>
-                      <span>90%</span>
-                </div>
-                <div class="skill-box">
-                    <i class="fab fa-bootstrap"></i>
-                    <h3>Bootstrap</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage bootstrap"></div>
-                      </div>
-                      <span>75%</span>
-                </div>
-                <div class="skill-box">
-                    <i class="fab fa-react"></i>
-                    <h3>React.js</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage react"></div>
-                      </div>
-                      <span>75%</span>
-                </div>
-                <div class="skill-box">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage python"></div>
-                      </div>
-                      <span>80%</span>
-                </div>
-                </div>
-            </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li>No Experience A Fresher</li> 
-                            </ul>
-                        </div>   
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2021-2024</span><br>Bachelor of Computer Application at GLS University, Ahmedabad</li>
-                            </ul>
-                        </div>
-                    </p>
-                </div>
+        </div>
 
-            </div>
-         </div>
-         <!-------contact----------->
-         <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-
-                        </div>
-                    </div>
-                    <div class="contact-right">
-                        <form>
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas odio in soluta, iusto quibusdam quis atque dolores! Dignissimos sequi, consequatur ea, commodi expedita nesciunt, eius distinctio quam aliquid fuga ipsa.</p>
-                        </form>
-                    </div>
+        <!-- Contact Section -->
+        <div id="contact" class="py-16 bg-gray-900">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-semibold text-center mb-6">Contact Me</h2>
+                <div class="flex flex-col items-center">
+                    <form class="w-full max-w-lg">
+                        <input type="text" name="Name" placeholder="Your Name" required class="w-full p-3 mb-4 bg-gray-800 text-white rounded-lg">
+                        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 mb-4 bg-gray-800 text-white rounded-lg">
+                        <textarea name="Message" rows="6" placeholder="Your Message" class="w-full p-3 mb-4 bg-gray-800 text-white rounded-lg"></textarea>
+                        <button type="submit" class="bg-red-600 text-white px-2 py-2 rounded-lg hover:bg-red-700 text-xs">Submit</button>
+                    </form>
                 </div>
             </div>
-         </div>
-         <script>
+        </div>
+
+        <script>
+              
             var tablinks = document.getElementsByClassName("tab-links");
             var tabcontents = document.getElementsByClassName("tab-contents");
             function opentab(tabname){
@@ -145,6 +152,7 @@
                 document.getElementById(tabname).classList.add("active-tab");
             }
 
-         </script>
+         
+        </script>
     </body>
 </html>

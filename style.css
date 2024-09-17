@@ -184,7 +184,7 @@ nav ul li a:hover::after{
     padding: 5px 10px;
     font-size: 10px;
     cursor: pointer;
-    border-radius: 10px; /* Rounded square shape */
+    border-radius: 20px; /* Rounded square shape */
     transition: background-color 0.3s ease;
     width: 20%; /* Full width button */
 }
