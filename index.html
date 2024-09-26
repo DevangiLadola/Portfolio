@@ -1,158 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Portfolio Website - Easy Tutorials</title>
-        <!-- Tailwind CSS CDN -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
 
-    </head>
-    <body class="bg-black text-white">
-        <!-- Navbar -->
-        <header class="bg-black text-white">
-            <div class="container mx-auto flex items-center justify-between py-4 px-1">
-                <!-- Logo -->
-                <img src="images/portfolio.png" alt="Portfolio Logo" class="w-32 h-auto">
-                <!-- Navigation -->
-                <nav class="flex space-x-6">
-                    <ul class="flex space-x-6">
-                        <li><a href="#" class="text-white hover:text-blue-500">Home</a></li>
-                        <li><a href="#about" class="text-white hover:text-blue-500">About Me</a></li>
-                        <li><a href="#project" class="text-white hover:text-blue-500">Projects</a></li>
-                        <li><a href="#contact" class="text-white hover:text-blue-500">Contact Me</a></li>
-                      </ul>
-                </nav>
-            </div>
-        </header>
-    
-        <!-- Hero Section -->
-        <div id="header" class="h-screen bg-cover bg-right" style="background-image: url('images/devangi.png');">
-            <div class="container mx-auto h-full flex flex-col justify-center items-left">
-                <div class="text-left">
-                    <h1 class="text-2xl font-bold mb-2">Hi, I'm <span class="text-red-500">Devangi</span> Ladola</h1>
-                    <p class="text-xl">A <span>Web Developer</span></p>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+</head> 
+
+<body>
+
+    <!-------------------------- Header Area -------------------------->
+    <header class="header-area">
+        <div class="container">
+            <div class="header">
+               
+                <a href="" class="logo">
+                    <img src="files/portfolio.png" alt="" class="portfolio">
+                    <i class="fa fa-bolt"></i>
+                </a>
+                   
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+                
+                <div class="menu_icon">
+                    <i class="fa fa-bars"></i>
                 </div>
+
+            </div>
+        </div> 
+    </header>
+ 
+    <!-------------------------- Home Page -------------------------->
+    <div class="FirstElement" id="home">
+        <div class="profile-photo">
+            <img src="files/devangi.jpg" alt="profile picture">
+        </div>
+        <div class="profile-text">
+            <h5>Hi, I'm </h5><br>
+            <h1>Devangi Ladola</h1><br>
+            <p>Welcome to my portfolio website! I'm a passionate and aspiring software engineer with a strong desire to create innovative solutions and push the boundaries of technology.With a deep love for coding and problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field</p>
+            
+            <div class="btn-group">
+                <a href="mailto:ladolad2004@gmail.com" class="btn">Contact Me</a>
+            </div>
+
+            <div class="social">
+                <a href="mailto:ladolad2004@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="https://github.com/DevangiLadola"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/devangi-ladola-8943b9259"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
+    </div>
 
-        <!-- About Section -->
-        <div id="about" class="container mx-auto text-center py-12">
-                <h1 class="sub-title text-white text-2xl mb-8">About Me</h1>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+        <!-------------------------- About Section -------------------------->
+    <section class="about-area" id="about">
+        <div class="container">
+            <div class="about">
+                
+                <div class="about-content">
+                    <h4>About Me</h4>
+                    <ul>
+                      <li>Hello! I recently graduated with a Bachelor's degree in BCA from GLS University, Ahmedabad. My education has given me a solid foundation in programming, software development, and problem-solving techniques. I'm passionate about technology and enjoy tackling new challenges, whether it's coding complex algorithms, developing applications, or exploring innovative tech solutions.</li>
+                      <li>During my time at university, I honed my skills in languages like React.js, Python, Java, and web development technologies, and I'm excited to apply them in real-world projects. I'm always eager to learn and grow, whether by staying updated on the latest trends or collaborating with others to create efficient, scalable solutions.</li>
+                      <li> I am now looking for opportunities where I can contribute my technical knowledge while continuing to expand my expertise in the field of software and technology. </li>
+                    </ul>
                 </div>
-                <!-- Skills -->
-                <div class="tab-contents active-tab" id="skills">
-                    
-                        <div class="skills-container">
-                            <div class="skill-box ">
-                                <i class="fab fa-html5"></i>
-                                <h3>HTML</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-percentage html"></div>
-                                  </div>
-                                  <span>90%</span>
-                            </div>
-                            <div class="skill-box">
-                                <i class="fab fa-css3-alt"></i>                               
-                                <h3>CSS</h3>
-                                <div class="skill-bar">
-                                <div class="skill-percentage css"></div>
-                                 </div>
-                                 <span>90%</span>
-                            </div>
-                            <div class="skill-box">
-                                <i class="fab fa-js"></i>
-                                <h3>Javascript</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-percentage javascript"></div>
-                                  </div>
-                                  <span>90%</span>
-                            </div>
                             
-                            <div class="skill-box">
-                                <i class="fab fa-bootstrap"></i>
-                                <h3>Bootstrap</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-percentage bootstrap"></div>
-                                  </div>
-                                  <span>75%</span>
-                            </div>
-                        
-                            <div class="skill-box">
-                                <i class="fab fa-react"></i>
-                                <h3>React.js</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-percentage react"></div>
-                                  </div>
-                                  <span>75%</span>
-                            </div>
-                        
-                            <div class="skill-box">
-                                <i class="fab fa-python"></i>
-                                <h3>Python</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-percentage python"></div>
-                                  </div>
-                                  <span>80%</span>
-                            </div>
-                    
-                            <!-- Repeat for other skills -->
-                         </div>
-                        
-                </div>
-                <!-- Experience -->
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li>No Experience - A Fresher</li>
-                    </ul>
-                </div>
-                <!-- Education -->
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span class="text-pink-500">2021-2024</span><br>Bachelor of Computer Application at GLS University, Ahmedabad</li>
-                    </ul>
-                </div>
-        
+            </div>
         </div>
+    </section>
 
-        <!-- Contact Section -->
-        <div id="contact" class="py-16 bg-gray-900">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-semibold text-center mb-6">Contact Me</h2>
-                <div class="flex flex-col items-center">
-                    <form class="w-full max-w-lg">
-                        <input type="text" name="Name" placeholder="Your Name" required class="w-full p-3 mb-4 bg-gray-800 text-white rounded-lg">
-                        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 mb-4 bg-gray-800 text-white rounded-lg">
-                        <textarea name="Message" rows="6" placeholder="Your Message" class="w-full p-3 mb-4 bg-gray-800 text-white rounded-lg"></textarea>
-                        <button type="submit" class="bg-red-600 text-white px-2 py-2 rounded-lg hover:bg-red-700 text-xs">Submit</button>
-                    </form>
+
+        <!-------------- Education & Internship -------------->
+    <section class="education-content" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="education ">
+                    <h3 class="title">Education</h3>
+                    <div class="row">
+                        <div class="timeline-box">
+                            <div class="timeline">
+
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        BCA - 7.5 CGPA
+                                    </h3>
+                                    <h4 class="timeline-title">GLS University</h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> 2021-2024
+                                    </h4>
+                                </div> 
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">HSC - 71%</h3>
+                                    <h4 class="timeline-title">Shree Kalapi Vinay Mandir, Lathi</h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> 2020-2021
+                                    </h4>
+                                </div>
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        SSC - 71%
+                                    </h3>
+                                    <h4 class="timeline-title"> Shree Kalapi Vinay Mandir, Lathi</h4>
+                                    <h4 class="timeline-title">
+                                        <i class="fa fa-calendar"></i> 2018-2019
+                                    </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h3 class="title">Experience</h3>
+                    <div class="row">
+                        <div class="timeline-box">
+                            <div class="timeline">
+                                
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <h3 class="timeline-title">
+                                        No Experience A Fresher 
+                                   </h3>
+                                    
+                                </div> 
+                               
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <script>
-              
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link"); 
-                document.getElementById(tabname).classList.add("active-tab");
-            }
 
-         
-        </script>
-    </body>
+    
+        <!-------------------------- Contact Me -------------------------->
+
+    <section class="contact-content" id="contact">
+        <div class="container">
+            <div class="contact-title">
+                <h4>Contact Me</h4>
+                <p>Get In Touch</p>
+            </div>
+            <div class="contact">
+                <form name="submitToGoogleSheet">
+                    <input type="text" name="NAME" placeholder="Name" required>
+                    <input type="email" name="EMAIL" placeholder="Email" required>
+                    <input type="text" name="SUBJECT" placeholder="Subject">
+                    <textarea name="MESSAGE" placeholder="Message"></textarea>
+                    <input type="submit" value="Send Message" class="submit">
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </section>
+        
+    <!-------------------------- JS -------------------------->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    
+    <!-------------------------- Footer section -------------------------->
+   <footer class="footer">
+    <small class="message">Thanks for visiting and happy coding!</small>
+    <small class="copyright">Made with <span class="heart">💕</span>  by <b>Devangi Ladola</b></small>
+   </footer>
+
+</body>
 </html>
