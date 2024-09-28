@@ -181,7 +181,7 @@ profile-photo .img{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom:50px;
+  margin-bottom:50  px;
 }
 .about-content{
   flex-basis: 60%;
@@ -399,6 +399,86 @@ html, body {
 .project:hover{
   border-color: #fed700;
 }
+/* Skills Section */
+.skills-section {
+  margin-top: 20px;
+}
+
+.skills-section h4 {
+  color: #fed700; /* Change color to yellow */
+  font-size: 40px; /* Match the same size as "About Me" */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px;
+  transition: width 0.5s; /* Animation for smooth width change */
+
+}
+
+/* Skill Progress Colors */
+body{
+  color: #e5e5e5;
+}
+.html {
+  width: 90%;
+  background-color: #fed700;
+}
+
+.css {
+  width: 90%;
+  background-color: #fed700;
+}
+
+.js {
+  width: 80%;
+  background-color: #fed700;
+}
+
+.bootstrap {
+  width: 75%;
+  background-color: #fed700;
+}
+
+.mysql {
+  width: 85%;
+  background-color: #fed700;
+}
+
+.python {
+  width: 85%;
+  background-color: #fed700;
+}
+
+.react {
+  width: 75%;
+  background-color: #fed700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about, .skills-section {
+      flex-direction: column;
+  }
+}
 
 
 
@@ -499,7 +579,6 @@ html, body {
   .projects{
     flex-direction: column;
   }
-  
 }
 
 
