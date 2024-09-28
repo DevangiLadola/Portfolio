@@ -153,7 +153,7 @@ profile-photo .img{
 }
 .profile-text h1{
   color: #fed700;
-  font-size: 3rem; 
+  font-size: 9rem; 
 }
 .profile-text p{
   color:#e5e5e5;
@@ -169,6 +169,19 @@ profile-photo .img{
   transform: rotate(360deg);
 }
 
+.name {
+  font-size: 3rem; /* Default size for larger screens */
+  color: #333; /* Optional: Change color */
+  font-weight: bold; /* Optional: Make it bold */
+  margin: 10px 0; /* Optional: Add margin */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .name {
+      font-size: 2.5rem; /* Adjust size for mobile */
+  }
+}
 
 
  /*---------------------------About---------------------------*/
@@ -421,17 +434,23 @@ html, body {
 }
 
 .progress-bar {
-  width: 100%;
-  background-color: #f0f0f0;
-  border-radius: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
   overflow: hidden;
+  height: 20px; /* Height of the progress bar */
+  width: 100%; /* Full width */
+  position: relative;
 }
 
 .progress {
-  height: 10px;
-  border-radius: 10px;
-  transition: width 0.5s; /* Animation for smooth width change */
-
+  background-color: #4caf50; /* Green color for progress */
+  height: 100%; /* Fill the bar */
+  text-align: center; /* Center the text inside */
+  line-height: 20px; /* Center the percentage vertically */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  position: relative; /* Positioning */
+  transition: width 1s ease; /* Animation for width */
 }
 
 /* Skill Progress Colors */

@@ -63,6 +63,13 @@ $(document).ready(function() {
     ScrollReveal().reveal(".projects, .contact", {
       origin: "bottom"
     });
+    ScrollReveal().reveal(".skills-content", {
+      origin: "bottom",
+      distance: "50px",
+      duration: 1000,
+      delay: 200,
+  });
+  
 
   //contact form to excel sheet
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzUSaaX3XmlE5m9YLOHOBrRuCh2Ohv49N9bs4bew7xPd1qlgpvXtnudDs5Xhp3jF-Fx/exec';
