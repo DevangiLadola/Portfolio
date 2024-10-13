@@ -110,10 +110,7 @@ $(document).ready(function () {
         }, 5000);
       });
   });
-  function toggleMenu() {
-    const navList = document.querySelector('.nav-list');
-    navList.classList.toggle('show'); // Toggles the visibility
-}
+  
   // Update active section based on scroll position
   function updateActiveSection() {
     var scrollPosition = $(window).scrollTop();
@@ -138,3 +135,7 @@ $(document).ready(function () {
     });
   }
 });
+function toggleMenu() {
+  const navList = document.querySelector('.nav-list');
+  navList.classList.toggle('show'); // Toggle the 'show' class to show/hide the menu
+}
