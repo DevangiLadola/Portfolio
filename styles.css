@@ -120,7 +120,9 @@ body{
   transition: background 0.3s;
 }
 
-
+.navbar li a:hover {
+  background-color: #f0f0f0; /* Change this for hover effect */
+}
 
 /* Responsive Styles */
 .menu_icon {
