@@ -139,3 +139,19 @@ function toggleMenu() {
   const navList = document.querySelector('.nav-list');
   navList.classList.toggle('show'); // Toggle the 'show' class to show/hide the menu
 }
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      
+      // Scroll to target section
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+
+      // Close the menu after clicking a link (if in mobile view)
+      if (window.innerWidth <= 768) {
+          const navList = document.querySelector('.nav-list');
+          navList.classList.remove('show'); // Hide the menu
+      }
+  });
+});
