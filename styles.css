@@ -63,7 +63,7 @@ body{
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 700;
-  margin-right: 250px;
+  margin-right: 100px;
 }
 
 .logo .fa-bolt {
@@ -82,7 +82,7 @@ body{
 }
 
 .header ul li:first-child {
-  margin-right: auto; 
+  margin-right: 20px; 
 }  
 
 .header ul{
@@ -90,7 +90,7 @@ body{
   align-items: center; 
 }
 .header ul li{
-  margin: 0 15px;
+  margin: 0 30px;
 }
 .header ul li a{
   text-transform: capitalize;
@@ -111,7 +111,7 @@ body{
 .navbar {
   list-style: none;
   display: flex;
-  gap: 40px; /* Space between menu items */
+  gap: 20px; /* Space between menu items */
 }
 .nav-list {
   display: flex;
@@ -178,6 +178,14 @@ body{
     display: flex; /* Show menu when menu icon is clicked */
   }
 
+  .logo img {
+    width: 150px; /* Increase the size to make it larger on mobile */
+    height: auto;
+  }
+
+  .header {
+    padding: 10px 0; /* Adjust padding if necessary */
+  }
 }
 
 
