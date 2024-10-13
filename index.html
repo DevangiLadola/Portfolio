@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
@@ -20,10 +21,13 @@
             <div class="header">
                
                 <a href="" class="logo">
-                    <img src="files/portfolio.png" alt="" class="portfolio">
+                    <img src="files/portfolio.png" alt="portfolio" class="portfolio">
                     <i class="fa fa-bolt"></i>
                 </a>
-                   
+                <div class="menu_icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+    
                 <ul class="navbar">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>
@@ -32,9 +36,7 @@
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
                 
-                <div class="menu_icon">
-                    <i class="fa fa-bars"></i>
-                </div>
+                
 
             </div>
         </div> 
@@ -210,7 +212,7 @@
                     <input type="text" name="NAME" placeholder="Name" required>
                     <input type="email" name="EMAIL" placeholder="Email" required>
                     <input type="text" name="SUBJECT" placeholder="Subject">
-                    <textarea name="MESSAGE" placeholder="Message"></textarea>
+                    <textarea name="MESSAGE" placeholder="Message" rows="5" required></textarea>
                     <input type="submit" value="Send Message" class="submit">
                 </form>
                 <span id="msg"></span>
