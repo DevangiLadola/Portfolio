@@ -63,6 +63,7 @@ body{
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 700;
+  margin-right: 250px;
 }
 
 .logo .fa-bolt {
@@ -102,7 +103,7 @@ body{
   color:#fed700;
 }
 .header .menu_icon{
-  color:#fff;
+  color:#030000;
   font-size: 18px;
   cursor: pointer;
   display: none;
@@ -110,7 +111,25 @@ body{
 .navbar {
   list-style: none;
   display: flex;
-  gap: 15px; /* Space between menu items */
+  gap: 40px; /* Space between menu items */
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fed700;
 }
 
 .navbar li a {
@@ -125,31 +144,42 @@ body{
 }
 
 /* Responsive Styles */
-.menu_icon {
-  display: none; /* Hide the menu icon on larger screens */
+.menu-icon {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+}
+
+.menu-icon i {
+  color: black;
+  font-size: 24px;
 }
 
 @media (max-width: 768px) {
-  .navbar {
-      display: none; /* Hide navbar by default on mobile */
-      flex-direction: column; /* Stack the items vertically */
-      width: 100%;
-      background-color: white; /* Set background color */
-      position: absolute;
-      top: 60px; /* Position below header */
-      left: 0;
-      z-index: 1000;
+  .nav-list {
+    display: none; /* Hide menu on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
   }
 
-  .menu_icon {
-      display: block; /* Show menu icon on mobile */
-      cursor: pointer;
+  .nav-list li {
+    margin: 15px 0;
   }
 
-  .navbar.show {
-      display: flex; /* Show navbar when toggled */
+  .menu-icon {
+    display: block; /* Show menu icon on small screens */
   }
+
+  .navbar.show .nav-list {
+    display: flex; /* Show menu when menu icon is clicked */
+  }
+
 }
+
 
 
 /*---------------------------HomePage--------------------------*/
