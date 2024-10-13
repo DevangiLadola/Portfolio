@@ -24,8 +24,11 @@ body{
   background-color:#202020;
 }
 .container{
-  width: 1170px;
-  margin:auto;
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items apart */
 }
 
 
@@ -33,11 +36,9 @@ body{
 
       /*---------------------------Header---------------------------*/
 
-.header-area{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+.header-area {
+  background-color: #333; /* Background color of the header */
+  padding: 10px 20px; /* Padding around the header */
 }
 
 .header-area.sticky {
@@ -63,7 +64,7 @@ body{
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 700;
-  margin-right: 100px;
+  margin-right: 200px;
 }
 
 .logo .fa-bolt {
