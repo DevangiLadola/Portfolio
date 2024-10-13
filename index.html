@@ -21,7 +21,6 @@
             <div class="header">
                 <a href="#home" class="logo"> <!-- Updated href -->
                     <img src="files/portfolio.png" alt="portfolio" class="portfolio">
-                    <i class="fa fa-bolt"></i>
                 </a>
                 <!-- Menu icon -->
                 <div class="menu-icon" onclick="toggleMenu()"> <!-- Changed to menu-icon -->
@@ -206,14 +205,13 @@
                 <p>Get In Touch</p>
             </div>
             <div class="contact">
-                <form name="submitToGoogleSheet">
+                <form action="#">
                     <input type="text" name="NAME" placeholder="Name" required>
                     <input type="email" name="EMAIL" placeholder="Email" required>
                     <input type="text" name="SUBJECT" placeholder="Subject">
                     <textarea name="MESSAGE" placeholder="Message" rows="5" required></textarea>
                     <input type="submit" value="Send Message" class="submit">
                 </form>
-                <span id="msg"></span>
             </div>
         </div>
     </section>

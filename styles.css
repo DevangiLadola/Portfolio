@@ -5,6 +5,7 @@
   padding:0;
   box-sizing:border-box;
   scroll-behavior:smooth;
+  
 }
 a{
   text-decoration: none ;
@@ -53,11 +54,7 @@ body{
         padding: 10px 0;
     }
     
-    .logo {
-        color: white;
-        text-decoration: none;
-        font-size: 24px;
-    }
+    
     
     .portfolio {
         height: 40px; /* Adjust according to your logo size */
